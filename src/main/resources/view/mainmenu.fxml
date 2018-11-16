@@ -8,22 +8,22 @@
    <children>
       <ImageView fx:id="imgTitle" fitHeight="119.0" fitWidth="1074.0" layoutX="103.0" layoutY="30.0" pickOnBounds="true">
          <image>
-            <Image url="@/img/mainmenu/TitleButton.png" />
+            <Image url="@/img/mainmenu/buttons/TitleButton.png" />
          </image>
       </ImageView>
       <ImageView fx:id="imgPlay" fitHeight="92.0" fitWidth="355.0" layoutX="359.0" layoutY="268.0" onMouseClicked="#onPlayClick" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@/img/mainmenu/PlayButton.png" />
+            <Image url="@/img/mainmenu/buttons/PlayButton.png" />
          </image>
       </ImageView>
       <ImageView fx:id="imgOptions" fitHeight="82.0" fitWidth="562.0" layoutX="359.0" layoutY="402.0" onMouseClicked="#onOptionsClick" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@/img/mainmenu/OptionsButton.png" />
+            <Image url="@/img/mainmenu/buttons/OptionsButton.png" />
          </image>
       </ImageView>
       <ImageView fx:id="imgExit" fitHeight="107.0" fitWidth="355.0" layoutX="359.0" layoutY="525.0" onMouseClicked="#onExitClick" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@/img/mainmenu/ExitButton.png" />
+            <Image url="@/img/mainmenu/buttons/ExitButton.png" />
          </image>
       </ImageView>
    </children>
