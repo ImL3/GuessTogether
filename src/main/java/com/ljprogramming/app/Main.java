@@ -11,18 +11,18 @@ public class Main extends Application {
     private final String SPRING_CONFIG_NAME = "spring-config";
 
     public static void main(String[] args) {
-
+        launch(args);
     }
 
     @Override
     public void start(Stage primaryStage) throws Exception {
         ApplicationContext applicationContext =
-                new ClassPathXmlApplicationContext(SPRING_PATH + "/" + SPRING_PATH + ".xml");
+                new ClassPathXmlApplicationContext( SPRING_PATH + '/' + SPRING_CONFIG_NAME + ".xml");
 
         Navigation navigation = applicationContext.getBean("navigation", Navigation.class);
 
-        navigation.
+        navigation.setStage(primaryStage);
 
-
+        navigation.loadScreen("mainmenu");
     }
 }
