@@ -15,4 +15,8 @@ public final class Navigation {
         return instance;
     }
 
+    public void loadScreen(String viewName){
+
+    }
+
 }
