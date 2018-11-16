@@ -63,6 +63,7 @@ public final class Navigation {
     private void setScene(Scene scene) {
         stage.setScene(scene);
         stage.setTitle("Guess Together");
+        stage.setResizable(false);
         stage.show();
     }
 
