@@ -1,6 +1,18 @@
 package com.ljprogramming.app;
 
-public class Navigation {
+public final class Navigation {
 
+    private static Navigation instance;
+
+    public Navigation(){
+    }
+
+    public static Navigation getInstance(){
+        if(instance == null){
+            instance = new Navigation();
+        }
+
+        return instance;
+    }
 
 }
