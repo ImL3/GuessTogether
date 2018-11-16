@@ -11,17 +11,17 @@
             <Image url="@/img/mainmenu/buttons/TitleButton.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="imgPlay" fitHeight="92.0" fitWidth="355.0" layoutX="359.0" layoutY="268.0" onMouseClicked="#onPlayClick" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgPlay" fitHeight="92.0" fitWidth="355.0" layoutX="359.0" layoutY="268.0" onMouseClicked="#onPlayClick" onMouseEntered="#onPlayMouseHover" onMouseExited="#onPlayMouseExit" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@/img/mainmenu/buttons/PlayButton.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="imgOptions" fitHeight="82.0" fitWidth="562.0" layoutX="359.0" layoutY="402.0" onMouseClicked="#onOptionsClick" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgOptions" fitHeight="82.0" fitWidth="562.0" layoutX="359.0" layoutY="402.0" onMouseClicked="#onOptionsClick" onMouseEntered="#onOptionsMouseHover" onMouseExited="#onOptionsMouseExit" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@/img/mainmenu/buttons/OptionsButton.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="imgExit" fitHeight="107.0" fitWidth="355.0" layoutX="359.0" layoutY="525.0" onMouseClicked="#onExitClick" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgExit" fitHeight="107.0" fitWidth="355.0" layoutX="359.0" layoutY="525.0" onMouseClicked="#onExitClick" onMouseEntered="#onExitMouseHover" onMouseExited="#onExitMouseExit" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@/img/mainmenu/buttons/ExitButton.png" />
          </image>
