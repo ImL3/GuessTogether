@@ -5,6 +5,11 @@
 
     <beans>
         <bean id="navigation" class="com.ljprogramming.app.Navigation">
+            <property name="controllers">
+                <map>
+                    <entry key="MainMenuController" value-ref="mainMenuController"/>
+                </map>
+            </property>
         </bean>
 
         <bean id="mainMenuController" class="com.ljprogramming.app.controller.MainMenuController">
