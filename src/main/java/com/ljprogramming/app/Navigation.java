@@ -66,7 +66,7 @@ public final class Navigation {
         stage.show();
     }
 
-    private void setStage(Stage stage) {
+    public void setStage(Stage stage) {
         this.stage = stage;
     }
 
