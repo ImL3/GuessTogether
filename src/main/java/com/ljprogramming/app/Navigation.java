@@ -39,7 +39,7 @@ public final class Navigation {
         Parent root;
 
         try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(VIEW_PATH + "/" + viewName + "/"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(VIEW_PATH + "/" + viewName + ".fxml"));
 
             fxmlLoader.setControllerFactory(new Callback<Class<?>, Object>() {
                 @Override
