@@ -33,7 +33,7 @@ public class MainMenuController implements Controller{
 
     @FXML
     void onExitClick(MouseEvent event) {
-
+        System.exit(0);
     }
 
     public void setNavigation(Navigation navigation) {
