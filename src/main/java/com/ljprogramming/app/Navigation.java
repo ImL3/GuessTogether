@@ -17,7 +17,7 @@ public final class Navigation {
     private final String VIEW_PATH = "/view";
 
     private Map<String,Controller> controllers;
-    private LinkedList<Scene> scenes;
+    private LinkedList<Scene> scenes = new LinkedList<>();
     private Stage stage;
 
     private static Navigation instance;
