@@ -29,6 +29,7 @@ public final class Navigation {
 
     }
 
-
-
+    public void setControllers(Map<String, Controller> controllers) {
+        this.controllers = controllers;
+    }
 }
