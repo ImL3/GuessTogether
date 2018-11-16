@@ -1,6 +1,16 @@
 package com.ljprogramming.app;
 
+import com.ljprogramming.app.controller.Controller;
+import javafx.scene.Scene;
+
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Map;
+
 public final class Navigation {
+
+    private Map<String,Controller> controllers;
+    private LinkedList<Scene> scenes;
 
     private static Navigation instance;
 
@@ -18,5 +28,7 @@ public final class Navigation {
     public void loadScreen(String viewName){
 
     }
+
+
 
 }
