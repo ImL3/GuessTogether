@@ -1,10 +1,13 @@
 package com.ljprogramming.app.controller;
 
+import com.ljprogramming.app.Navigation;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 
 public class MainMenuController {
+
+    private Navigation navigation;
 
     @FXML
     private ImageView imgTitle;
@@ -33,4 +36,7 @@ public class MainMenuController {
 
     }
 
+    public void setNavigation(Navigation navigation) {
+        this.navigation = navigation;
+    }
 }
