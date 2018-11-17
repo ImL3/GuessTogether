@@ -30,7 +30,7 @@ public class MainMenuController implements Controller{
 
     @FXML
     void onExitButtonClick(MouseEvent event) {
-
+        System.exit(0);
     }
 
     @FXML
@@ -53,6 +53,7 @@ public class MainMenuController implements Controller{
 
     }
 
+
     @FXML
     void onOptionsButtonExit(MouseEvent event) {
 
@@ -72,7 +73,6 @@ public class MainMenuController implements Controller{
     void onPlayButtonExit(MouseEvent event) {
 
     }
-
 
     public void setNavigation(Navigation navigation) {
         this.navigation = navigation;
