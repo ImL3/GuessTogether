@@ -4,68 +4,75 @@ import com.ljprogramming.app.Navigation;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.GridPane;
 
 public class MainMenuController implements Controller{
 
     private Navigation navigation;
 
     @FXML
+    private GridPane gridButtons;
+
+    @FXML
+    private ImageView imgShapeHolder;
+
+    @FXML
+    private ImageView imgPlayButton;
+
+    @FXML
+    private ImageView imgOptionsButton;
+
+    @FXML
+    private ImageView imgExitButton;
+
+    @FXML
     private ImageView imgTitle;
 
     @FXML
-    private ImageView imgPlay;
-
-    @FXML
-    private ImageView imgOptions;
-
-    @FXML
-    private ImageView imgExit;
-
-
-    @FXML
-    void onPlayClick(MouseEvent event) {
+    void onExitButtonClick(MouseEvent event) {
 
     }
 
     @FXML
-    void onPlayMouseExit(MouseEvent event) {
+    void onExitButtonEnter(MouseEvent event) {
 
     }
 
     @FXML
-    void onPlayMouseHover(MouseEvent event) {
+    void onExitButtonExit(MouseEvent event) {
 
     }
 
     @FXML
-    void onOptionsClick(MouseEvent event) {
+    void onOptionsButtonClick(MouseEvent event) {
 
     }
 
     @FXML
-    void onOptionsMouseExit(MouseEvent event) {
+    void onOptionsButtonEnter(MouseEvent event) {
 
     }
 
     @FXML
-    void onOptionsMouseHover(MouseEvent event) {
+    void onOptionsButtonExit(MouseEvent event) {
 
     }
 
     @FXML
-    void onExitClick(MouseEvent event) {
+    void onPlayButtonClick(MouseEvent event) {
 
     }
 
     @FXML
-    void onExitMouseExit(MouseEvent event) {
+    void onPlayButtonEnter(MouseEvent event) {
 
     }
 
     @FXML
-    void onExitMouseHover(MouseEvent event) {
+    void onPlayButtonExit(MouseEvent event) {
 
     }
+
 
     public void setNavigation(Navigation navigation) {
         this.navigation = navigation;

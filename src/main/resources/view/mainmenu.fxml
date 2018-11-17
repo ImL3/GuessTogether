@@ -1,30 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Rectangle2D?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
 
-<Pane maxHeight="800.0" maxWidth="1280.0" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ljprogramming.app.controller.MainMenuController">
-   <children>
-      <ImageView fx:id="imgTitle" fitHeight="119.0" fitWidth="1074.0" layoutX="103.0" layoutY="30.0" pickOnBounds="true">
-         <image>
-            <Image url="@/img/mainmenu/buttons/TitleButton.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="imgPlay" fitHeight="92.0" fitWidth="355.0" layoutX="359.0" layoutY="268.0" onMouseClicked="#onPlayClick" onMouseEntered="#onPlayMouseHover" onMouseExited="#onPlayMouseExit" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@/img/mainmenu/buttons/PlayButton.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="imgOptions" fitHeight="82.0" fitWidth="562.0" layoutX="359.0" layoutY="402.0" onMouseClicked="#onOptionsClick" onMouseEntered="#onOptionsMouseHover" onMouseExited="#onOptionsMouseExit" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@/img/mainmenu/buttons/OptionsButton.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="imgExit" fitHeight="107.0" fitWidth="355.0" layoutX="359.0" layoutY="525.0" onMouseClicked="#onExitClick" onMouseEntered="#onExitMouseHover" onMouseExited="#onExitMouseExit" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@/img/mainmenu/buttons/ExitButton.png" />
-         </image>
-      </ImageView>
-   </children>
-</Pane>
+
+<BorderPane maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ljprogramming.app.controller.MainMenuController">
+   <center>
+      <VBox prefHeight="337.0" prefWidth="533.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="318.0" prefWidth="550.0" VBox.vgrow="NEVER">
+               <children>
+                  <GridPane fx:id="gridButtons" alignment="BOTTOM_RIGHT" hgap="10.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="353.0" prefWidth="432.0" HBox.hgrow="NEVER">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="235.0" minWidth="10.0" prefWidth="141.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="509.0" minWidth="10.0" prefWidth="432.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView fx:id="imgShapeHolder" fitHeight="63.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="RIGHT">
+                           <image>
+                              <Image url="@/img/mainmenu/shapes/PolygonShape.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="imgPlayButton" fitHeight="49.0" fitWidth="163.0" onMouseClicked="#onPlayButtonClick" onMouseEntered="#onPlayButtonEnter" onMouseExited="#onPlayButtonExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.vgrow="NEVER">
+                           <image>
+                              <Image url="@/img/mainmenu/buttons/PlayButton.png" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D minX="2.0" minY="2.0" />
+                           </viewport>
+                        </ImageView>
+                        <ImageView fx:id="imgOptionsButton" fitHeight="51.0" fitWidth="258.0" onMouseClicked="#onOptionsButtonClick" onMouseEntered="#onOptionsButtonEnter" onMouseExited="#onOptionsButtonExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@/img/mainmenu/buttons/OptionsButton.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="imgExitButton" fitHeight="40.0" fitWidth="146.0" onMouseClicked="#onExitButtonClick" onMouseEntered="#onExitButtonEnter" onMouseExited="#onExitButtonExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <image>
+                              <Image url="@/img/mainmenu/buttons/ExitButton.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="97.0" prefWidth="800.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <right>
+      <VBox prefHeight="334.0" prefWidth="159.0" BorderPane.alignment="CENTER" />
+   </right>
+   <top>
+      <VBox prefHeight="169.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="130.0" prefWidth="800.0">
+               <children>
+                  <ImageView fx:id="imgTitle" fitHeight="119.0" fitWidth="560.0" pickOnBounds="true" smooth="false">
+                     <image>
+                        <Image url="@/img/mainmenu/buttons/TitleButton.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <left>
+      <VBox prefHeight="334.0" prefWidth="232.0" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>
