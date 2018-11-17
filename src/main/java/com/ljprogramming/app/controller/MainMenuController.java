@@ -4,8 +4,6 @@ import com.ljprogramming.app.Navigation;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.shape.Polygon;
-import javafx.scene.shape.Shape;
 
 public class MainMenuController implements Controller{
 
