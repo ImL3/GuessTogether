@@ -1,14 +1,27 @@
 package com.ljprogramming.app.controller;
 
 import com.ljprogramming.app.Navigation;
+import com.ljprogramming.app.util.enums.ButtonType;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 
-public class MainMenuController implements Controller{
+public class MainMenuController {
 
     private Navigation navigation;
+
+    @FXML
+    private BorderPane borderPane;
+
+    @FXML
+    private VBox vboxCenter;
+
+    @FXML
+    private HBox hboxCenterChild;
 
     @FXML
     private GridPane gridButtons;
@@ -26,7 +39,22 @@ public class MainMenuController implements Controller{
     private ImageView imgExitButton;
 
     @FXML
+    private HBox vboxBottom;
+
+    @FXML
+    private VBox vboxRight;
+
+    @FXML
+    private VBox vboxTop;
+
+    @FXML
+    private HBox hboxTopChild;
+
+    @FXML
     private ImageView imgTitle;
+
+    @FXML
+    private VBox vboxLeft;
 
     @FXML
     void onExitButtonClick(MouseEvent event) {
@@ -72,6 +100,14 @@ public class MainMenuController implements Controller{
     @FXML
     void onPlayButtonExit(MouseEvent event) {
 
+    }
+
+    private void updateButtonMark(ButtonType currentButton){
+
+        switch (currentButton){
+            case PLAY:
+                imgShapeHolder.getY();
+        }
     }
 
     public void setNavigation(Navigation navigation) {

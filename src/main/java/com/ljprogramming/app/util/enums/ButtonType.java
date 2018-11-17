@@ -1,6 +1,6 @@
 package com.ljprogramming.app.util.enums;
 
-public enum Button {
+public enum ButtonType {
     PLAY,
     OPTIONS,
     EXIT

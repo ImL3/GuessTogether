@@ -10,12 +10,11 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-
-<BorderPane maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ljprogramming.app.controller.MainMenuController">
+<BorderPane fx:id="borderPane" maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ljprogramming.app.controller.MainMenuController">
    <center>
-      <VBox prefHeight="337.0" prefWidth="533.0" BorderPane.alignment="CENTER">
+      <VBox fx:id="vboxCenter" prefHeight="337.0" prefWidth="533.0" BorderPane.alignment="CENTER">
          <children>
-            <HBox alignment="CENTER" prefHeight="318.0" prefWidth="550.0" VBox.vgrow="NEVER">
+            <HBox fx:id="hboxCenterChild" alignment="CENTER" prefHeight="318.0" prefWidth="550.0" VBox.vgrow="NEVER">
                <children>
                   <GridPane fx:id="gridButtons" alignment="BOTTOM_RIGHT" hgap="10.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="353.0" prefWidth="432.0" HBox.hgrow="NEVER">
                     <columnConstraints>
@@ -59,15 +58,15 @@
       </VBox>
    </center>
    <bottom>
-      <HBox alignment="CENTER" prefHeight="97.0" prefWidth="800.0" BorderPane.alignment="CENTER" />
+      <HBox fx:id="vboxBottom" alignment="CENTER" prefHeight="97.0" prefWidth="800.0" BorderPane.alignment="CENTER" />
    </bottom>
    <right>
-      <VBox prefHeight="334.0" prefWidth="159.0" BorderPane.alignment="CENTER" />
+      <VBox fx:id="vboxRight" prefHeight="334.0" prefWidth="159.0" BorderPane.alignment="CENTER" />
    </right>
    <top>
-      <VBox prefHeight="169.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+      <VBox fx:id="vboxTop" prefHeight="169.0" prefWidth="800.0" BorderPane.alignment="CENTER">
          <children>
-            <HBox alignment="CENTER" prefHeight="130.0" prefWidth="800.0">
+            <HBox fx:id="hboxTopChild" alignment="CENTER" prefHeight="130.0" prefWidth="800.0">
                <children>
                   <ImageView fx:id="imgTitle" fitHeight="119.0" fitWidth="560.0" pickOnBounds="true" smooth="false">
                      <image>
@@ -80,6 +79,6 @@
       </VBox>
    </top>
    <left>
-      <VBox prefHeight="334.0" prefWidth="232.0" BorderPane.alignment="CENTER" />
+      <VBox fx:id="vboxLeft" prefHeight="334.0" prefWidth="232.0" BorderPane.alignment="CENTER" />
    </left>
 </BorderPane>
