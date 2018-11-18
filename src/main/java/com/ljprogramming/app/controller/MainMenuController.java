@@ -10,7 +10,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
-public class MainMenuController {
+public class MainMenuController implements Controller {
 
     private Navigation navigation;
 
