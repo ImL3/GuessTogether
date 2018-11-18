@@ -18,31 +18,4 @@ public enum Shape {
         this.shapeName = shapeName;
     }
 
-
-    public static Image getRandomShapeImage(){
-        Image shapeImage = null;
-        Shape randomShape = getRandomShape();
-
-        if (randomShape == TRIANGLE){
-            shapeImage = new Image(IMG_SHAPES_PATH + "/" + randomShape.shapeName + IMG_NAME_SUFFIX + "." + IMG_EXTENSION );
-        }
-        else if (randomShape == POLYGON){
-            shapeImage = new Image(IMG_SHAPES_PATH + "/" + randomShape.shapeName + IMG_NAME_SUFFIX + "." + IMG_EXTENSION );
-        }
-        else if (randomShape == CIRCLE){
-            shapeImage = new Image(IMG_SHAPES_PATH + "/" + randomShape.shapeName + IMG_NAME_SUFFIX + "." + IMG_EXTENSION );
-        }
-
-        return shapeImage;
-    }
-
-    public static Shape getRandomShape(){
-        int min = 0;
-        int max = Shape.values().length - 1;
-        int range = (max - min) + 1;
-        int random = (int)(Math.random() * range) + min;
-
-        return Shape.values()[random];
-    }
-
 }
