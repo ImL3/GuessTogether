@@ -105,6 +105,11 @@ public class MainMenuController implements Controller {
     private void moveShapeHolderToButton(ButtonType currentButton){
         int buttonRowIndex = getButtonRowIndex(currentButton);
         GridPane.setRowIndex(imgShapeHolder,buttonRowIndex);
+        setDifferentShape();
+    }
+
+    private void setDifferentShape() {
+
     }
 
     private int getButtonRowIndex(ButtonType buttonType){
