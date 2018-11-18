@@ -10,4 +10,5 @@ public interface ShapeService {
     Image getRandomShapeImage();
 
     Image getShapeImage();
+
 }
