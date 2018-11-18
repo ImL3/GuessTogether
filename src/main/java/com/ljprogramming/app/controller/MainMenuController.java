@@ -63,7 +63,7 @@ public class MainMenuController implements Controller {
 
     @FXML
     void onExitButtonEnter(MouseEvent event) {
-
+        moveShapeHolderToButton(ButtonType.EXIT);
     }
 
     @FXML
@@ -78,7 +78,7 @@ public class MainMenuController implements Controller {
 
     @FXML
     void onOptionsButtonEnter(MouseEvent event) {
-
+        moveShapeHolderToButton(ButtonType.OPTIONS);
     }
 
 
@@ -94,7 +94,7 @@ public class MainMenuController implements Controller {
 
     @FXML
     void onPlayButtonEnter(MouseEvent event) {
-
+        moveShapeHolderToButton(ButtonType.PLAY);
     }
 
     @FXML
