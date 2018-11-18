@@ -111,6 +111,7 @@ public class MainMenuController implements Controller {
     }
 
     private void setDifferentShape() {
+
         Image newRandomShapeImage;
         do {
             newRandomShapeImage = Shape.getRandomShapeImage();
