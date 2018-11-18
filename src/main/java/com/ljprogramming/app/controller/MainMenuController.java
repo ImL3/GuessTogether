@@ -102,13 +102,36 @@ public class MainMenuController implements Controller {
 
     }
 
-    private void updateButtonMark(ButtonType currentButton){
-
-        switch (currentButton){
-            case PLAY:
-                imgShapeHolder.getY();
-        }
+    private void moveShapeHolderToButton(ButtonType currentButton){
+        int buttonRowIndex = getButtonRowIndex(currentButton);
+        GridPane.setRowIndex(imgShapeHolder,buttonRowIndex);
     }
+
+    private int getButtonRowIndex(ButtonType buttonType){
+
+        int buttonRowIndex;
+
+        switch (buttonType){
+            case PLAY:
+                buttonRowIndex = GridPane.getRowIndex(imgPlayButton);
+                break;
+            case OPTIONS:
+                buttonRowIndex = GridPane.getRowIndex(imgOptionsButton);
+                break;
+
+            case EXIT:
+                buttonRowIndex = GridPane.getRowIndex(imgExitButton);
+                break;
+
+            default:
+                buttonRowIndex = GridPane.getRowIndex(imgShapeHolder);
+                System.out.println("Unknown button");
+                break;
+        }
+
+        return buttonRowIndex;
+    }
+
 
     public void setNavigation(Navigation navigation) {
         this.navigation = navigation;

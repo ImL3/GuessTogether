@@ -32,7 +32,7 @@
                               <Image url="@/img/mainmenu/shapes/PolygonShape.png" />
                            </image>
                         </ImageView>
-                        <ImageView fx:id="imgPlayButton" fitHeight="49.0" fitWidth="163.0" onMouseClicked="#onPlayButtonClick" onMouseEntered="#onPlayButtonEnter" onMouseExited="#onPlayButtonExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.hgrow="NEVER" GridPane.vgrow="NEVER">
+                        <ImageView fx:id="imgPlayButton" fitHeight="49.0" fitWidth="163.0" onMouseClicked="#onPlayButtonClick" onMouseEntered="#onPlayButtonEnter" onMouseExited="#onPlayButtonExit" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.hgrow="NEVER" GridPane.vgrow="NEVER">
                            <image>
                               <Image url="@/img/mainmenu/buttons/PlayButton.png" />
                            </image>
