@@ -10,6 +10,7 @@ public enum Shape {
 
     public static final String IMG_SHAPES_PATH = "img/mainmenu/shapes";
     public static final String IMG_EXTENSION = "png";
+    public static final String IMG_NAME_SUFFIX = "Shape";
 
     private String shapeName;
 
@@ -23,13 +24,13 @@ public enum Shape {
         Shape randomShape = getRandomShape();
 
         if (randomShape == TRIANGLE){
-            shapeImage = new Image(IMG_SHAPES_PATH + "/" + randomShape.shapeName + "." + IMG_EXTENSION );
+            shapeImage = new Image(IMG_SHAPES_PATH + "/" + randomShape.shapeName + IMG_NAME_SUFFIX + "." + IMG_EXTENSION );
         }
         else if (randomShape == POLYGON){
-            shapeImage = new Image(IMG_SHAPES_PATH + "/" + randomShape.shapeName + "." + IMG_EXTENSION );
+            shapeImage = new Image(IMG_SHAPES_PATH + "/" + randomShape.shapeName + IMG_NAME_SUFFIX + "." + IMG_EXTENSION );
         }
         else if (randomShape == CIRCLE){
-            shapeImage = new Image(IMG_SHAPES_PATH + "/" + randomShape.shapeName + "." + IMG_EXTENSION );
+            shapeImage = new Image(IMG_SHAPES_PATH + "/" + randomShape.shapeName + IMG_NAME_SUFFIX + "." + IMG_EXTENSION );
         }
 
         return shapeImage;

@@ -4,6 +4,7 @@ import com.ljprogramming.app.Navigation;
 import com.ljprogramming.app.util.enums.ButtonType;
 import com.ljprogramming.app.util.enums.Shape;
 import javafx.fxml.FXML;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
@@ -110,8 +111,12 @@ public class MainMenuController implements Controller {
     }
 
     private void setDifferentShape() {
+        Image newRandomShapeImage;
+        do {
+            newRandomShapeImage = Shape.getRandomShapeImage();
+        }while (newRandomShapeImage == imgShapeHolder.getImage());
 
-
+        imgShapeHolder.setImage(newRandomShapeImage);
     }
 
     private int getButtonRowIndex(ButtonType buttonType){
